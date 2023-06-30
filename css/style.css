@@ -7,7 +7,9 @@
     --accent-color-light-brown: #C99B67;
     --accent-color-light-brown-80: rgba(201, 155, 103, 0.8);
     --accent-color-light-brown-60: rgba(201, 155, 103, 0.6);
+    --green-bg: #0A775F;
     --light-brown: #F3D7B7;
+    --light-green-bg: #F8F8F2;
     --outline-color: var(--accent-color-green);
 }
 
@@ -15,8 +17,8 @@
 /* FONTS */
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Medium.woff2') format('woff2'),
-        url('Roboto-Medium.woff') format('woff');
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -24,8 +26,8 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Regular.woff2') format('woff2'),
-        url('Roboto-Regular.woff') format('woff');
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -33,8 +35,8 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Bold.woff2') format('woff2'),
-        url('Roboto-Bold.woff') format('woff');
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -248,4 +250,261 @@ img {
 
 .hero-img-index {
     height: 696px;
+}
+
+
+/* MAIN CONTENT */
+.main-content {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+/* INDEX COLLECTION */
+.index-collection {
+    margin-bottom: 20px;
+}
+
+.index-collection-inner {
+    padding: 50px 143px;
+    background-color: var(--light-green-bg);
+    background-image: url(../img/light-green-bg.jpg);
+}
+
+.index-collection-heding {
+    margin: 0;
+    margin-bottom: 80px;
+    font-size: 50px;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.index-collection-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.index-collection-item {
+    display: flex;
+    align-items: center;
+}
+
+.index-collection-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.index-collection-img {
+    flex-shrink: 0;
+    width: 450px;
+    height: 375px;
+    object-fit: cover;
+}
+
+.index-collection-info {
+    flex-grow: 1;
+    padding-left: 117px;
+    padding-right: 117px;
+}
+
+.index-collection-title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 48px;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.index-collection-text {
+    margin: 0;
+    font-size: 22px;
+    line-height: 34px;
+}
+
+
+/* INDEX FEATURE */
+.index-features {
+    margin-bottom: 30px;
+}
+
+.index-features-inner {
+    padding: 20px 30px;
+    background-image: url(../img/brown-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+}
+
+.index-features-heading {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 50px;
+    text-align: center;
+    line-height: normal;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.index-features-lead {
+    max-width: 580px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    text-align: center;
+    color: #fff;
+}
+
+.index-features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-left: -20px;
+    padding: 0;
+    list-style: none;
+}
+
+.index-features-item {
+    width: calc(100%/3 - 20px);
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.index-features-img {
+    margin-bottom: 28px;
+    width: 433px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.index-features-item-heading {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.index-features-item-text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+/* HOW IT WORKS */
+.how-it-works {
+}
+
+.how-it-works-inner {
+    padding: 50px 30px;
+    background-color: var(--green-bg);
+    background-image: url(../img/green-bg.jpg);
+    text-align: center;
+}
+.how-it-works-heading {
+    margin: 0;
+    margin-bottom: 80px;
+    font-size: 50px;
+    line-height: normal;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.how-it-works-list {
+    display: flex;
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0;
+    list-style: none;
+    margin-left: -20px;
+    text-align: left;
+    counter-reset: how-it-works;
+}
+
+.how-it-works-item {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/3 - 20);
+    padding-left: 20px;
+    counter-increment: how-it-works;
+}
+
+.how-it-works-item::before {
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    border: 4px solid var(--accent-color-light-brown);
+    background-color: var(--light-green-bg);
+    content: '';
+}
+
+.how-it-works-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 40px;
+    flex-grow: 1;
+    background-color: var(--light-green-bg);
+}
+
+.how-it-works-info::before {
+    align-self: flex-end;
+    margin-bottom: 45px;
+    font-size: 64px;
+    line-height: normal;
+    text-align: right;
+    content: '0'counter(how-it-works);
+}
+
+.how-it-works-step-title {
+    max-width: 250px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.how-it-works-step-text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.how-it-works-cta:focus {
+    outline: 2px dashed var(--accent-color-light-brown);
+    outline-offset: 3px;
+}
+
+
+
+
+/* RETINA */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+.site-header-hero-wrapper {
+    background-image: url(../img/site-header-hero-bg@2x.jpg);
+}
+
+.index-collection-inner {
+    background-image: url(../img/light-green-bg@2x.jpg);
+}
+
+.index-features-inner {
+    background-image: url(../img/brown-bg@2x.jpg);
+}
+
+.how-it-works-inner {
+    background-image: url(../img/green-bg@2x.jpg);
+}
+
 }
