@@ -159,6 +159,7 @@ img {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
 .site-header-container {
     display: flex;
     align-items: center;
@@ -166,11 +167,21 @@ img {
     padding-left: 50px;
     padding-right: 50px;
 }
+
 .site-header-logo-link {
     flex-shrink: 0;
     display: flex;
     text-decoration: none;
 }
+
+.site-header-logo-link:hover {
+    opacity: 0.8;
+}
+
+.site-header-logo-link:active {
+    opacity: 0.6;
+}
+
 .site-header-logo-img {
     width: 235px;
     height: 24px;
@@ -183,10 +194,12 @@ img {
     padding: 0;
     list-style: none;
 }
+
 .sitenav-item:not(:last-child) {
     margin-right: 40px;
 
 }
+
 .sitenav-link {
     font-size: 12px;
     line-height: normal;
@@ -480,6 +493,68 @@ img {
 }
 
 
+/* SITE FOOTER */
+.site-footer {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-color: var(--light-brown);
+    background-image: url(../img/site-header-hero-bg.jpg);
+}
+
+.site-footer-container {
+    padding-right: 30px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-footer-logo-link {
+    display: flex;
+}
+
+.site-footer-logo-link:hover {
+    opacity: 0.8;
+}
+
+.site-footer-logo-link:active {
+    opacity: 0.6;
+}
+
+.site-footer-logo-img {
+    flex-shrink: 0;
+    width: 235px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.sitenav-medium-font {
+    font-size: 16px;
+    line-height: 1px;
+}
+
+.socials {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    list-style: none;
+}
+.socials-item:not(:last-child) {
+    margin-right: 30px;
+}
+.socials-link {
+    display: flex;
+    color: #333;
+}
+
+.socials-link:hover {
+    color: var(--accent-color-green);
+}
+
+.socials-link:active {
+    opacity: 0.6;
+}
 
 
 /* RETINA */
@@ -505,6 +580,10 @@ only screen and (                min-resolution: 2dppx) {
 
 .how-it-works-inner {
     background-image: url(../img/green-bg@2x.jpg);
+}
+
+.site-footer {
+    background-image: url(../img/site-header-hero-bg@2x.jpg);
 }
 
 }
