@@ -182,6 +182,19 @@ img {
     opacity: 0.6;
 }
 
+.hero-img-wrapper {
+    position: relative;
+}
+
+.hero-badge {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
+}
+
 .site-header-logo-img {
     width: 235px;
     height: 24px;
@@ -279,6 +292,7 @@ img {
 }
 
 .index-collection-inner {
+    position: relative;
     padding: 50px 143px;
     background-color: var(--light-green-bg);
     background-image: url(../img/light-green-bg.jpg);
@@ -316,6 +330,31 @@ img {
     object-fit: cover;
 }
 
+.index-collection-badge {
+    position: absolute;
+}
+
+.leaves-left {
+    width: 371px;
+    height: 371px;
+    top: 50px;
+    left: -160px;
+}
+
+.leaves-right-mix {
+    width: 422px;
+    height: 407px;
+    top: 720px;
+    right: -255px;
+}
+
+.leaves-left-light {
+    width: 313px;
+    height: 286px;
+    bottom: 180px;
+    left: -205px;
+}
+
 .index-collection-info {
     flex-grow: 1;
     padding-left: 117px;
@@ -343,6 +382,7 @@ img {
 }
 
 .index-features-inner {
+    position: relative;
     padding: 20px 30px;
     background-image: url(../img/brown-bg.jpg);
     background-repeat: no-repeat;
@@ -391,6 +431,14 @@ img {
     object-fit: cover;
 }
 
+.features-badge {
+    width: 140px;
+    height: 144px;
+    position: absolute;
+    top: 200px;
+    left: -20px;
+}
+
 .index-features-item-heading {
     margin: 0;
     margin-bottom: 10px;
@@ -412,6 +460,7 @@ img {
 }
 
 .how-it-works-inner {
+    position: relative;
     padding: 50px 30px;
     background-color: var(--green-bg);
     background-image: url(../img/green-bg.jpg);
@@ -424,6 +473,14 @@ img {
     line-height: normal;
     color: #fff;
     text-transform: uppercase;
+}
+
+.how-it-works-badge {
+    width: 226px;
+    height: 191px;
+    position: absolute;
+    top: 41px;
+    right: 88px;
 }
 
 .how-it-works-list {
